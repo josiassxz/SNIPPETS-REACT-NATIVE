@@ -1,0 +1,31 @@
+{
+    "styles": {
+        "prefix": "styled-react-native",
+        "body": [
+            "import styled from 'styled-components/native';",
+            "",
+            "export const ${1:Container} = styled.${2:View}`",
+            "  ${3}",
+            "`;",
+            ""
+        ],
+        "description": "Create React Native Styled Components file"
+    },
+    "componentFunctionalTypescript": {
+        "prefix": "rnfc",
+        "body": [
+            "import React from 'react';",
+            "",
+            "import { Container } from './styles';",
+            "",
+            "export function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}(){",
+            "  return (",
+		"	 <Container>",
+            "",
+            "    </Container>",
+            ");",
+            "}",
+        ],
+        "description": "Create React Native Functional Component"
+    }
+}
